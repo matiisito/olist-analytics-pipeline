@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.env
+
+# Data (los CSVs son muy pesados para GitHub)
+data/raw/*.csv
+data/raw/*.zip
+
+# Airflow
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/.user.yml
+
+# Credenciales
+.env
+profiles.yml
+
+# macOS
+.DS_Store
