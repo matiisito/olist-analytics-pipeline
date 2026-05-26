@@ -49,6 +49,7 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data
+      - ./dbt_project:/opt/airflow/dbt_project
     ports:
       - "8080:8080"
     command: webserver
@@ -73,5 +74,6 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data
+      - ./dbt_project:/opt/airflow/dbt_project
     command: scheduler
     restart: always
